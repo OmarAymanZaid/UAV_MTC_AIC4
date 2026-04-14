@@ -13,7 +13,11 @@ def parse_annotation_file(file_path):
             if not line:
                 continue
 
-            parts = line.split(",")
+            if line.find(",") != -1:
+                parts = line.split(",")
+            elif line.find(" ") != -1:
+                parts = line.split(" ")
+
             x, y, w, h = map(float, parts)
             boxes.append((x, y, w, h))
 

@@ -35,6 +35,7 @@ class UAVDataset:
         Returns:
         - video capture
         - annotations
+        - folder
         """
         folder = self.videos[index]
 

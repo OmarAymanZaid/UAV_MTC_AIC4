@@ -2,6 +2,8 @@ import os
 
 # Root dataset directory
 DATASET_ROOT = os.path.join("data")
+MANIFEST_PATH = "data/metadata/contestant_manifest.json"
+
 
 # Visualization settings
 SHOW_BBOX = True
